@@ -34,7 +34,7 @@ resource "aws_instance" "webserver_Instance" {
       ami = var.ami_webserver
       key_name = "ec2-demo"
       tags = {
-        name "webserver_Instance"
+        name = "webserver_Instance"
         }
       security_groups = ["${aws_security_group.Webserver_SG.name}"]
 }

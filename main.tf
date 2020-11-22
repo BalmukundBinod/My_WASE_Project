@@ -5,6 +5,6 @@ resource "aws_instance" "hello_terraform" {
   ami = "ami-062f782c5c05090ae"
   instance_type = "t2.micro"
   tags {
-    name = "Balu_Ec2"
+    Name = "Balu_Ec2"
     }
 }

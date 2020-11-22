@@ -29,3 +29,12 @@ resource "aws_security_group" "webserver_SG" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
+resource "aws_instance" "webserver_Instance" {
+      instance_type = var.type_webserver
+      ami = var.ami_webserver
+      key_name = "ec2-demo"
+      tags = {
+        name "webserver_Instance"
+        }
+      security_groups = ["${aws_security_group.Webserver_SG.name}"]
+}

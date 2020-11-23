@@ -1,2 +1,1 @@
-Web hook samle job.dfbdhddhgddf
-and it shou
+This is Devops reposatory for WASE dissertation project

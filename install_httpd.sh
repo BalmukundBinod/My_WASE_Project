@@ -2,4 +2,4 @@
 yum install httpd -y 
 service httpd start
 chkconfig httpd on
-sed 's/Test Page/WASE final project/g' index.html
+echo "<h1> Deployed by terraform</h1>" > /var/www/html/index.html

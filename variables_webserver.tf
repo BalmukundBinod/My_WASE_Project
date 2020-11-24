@@ -1,11 +1,11 @@
 variable "region" {
-	default = "us-east-2"
+	default = "us-west-2"
 }
 variable "instance_type" {
 	default = "t2.micro"
 }
 variable "ami" {
-	default = "ami-062f782c5c05090ae"
+	default = "ami-e689729e"
 }
 variable "Instance_Name" {
 	default = "Terraform instance"
